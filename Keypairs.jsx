@@ -23,5 +23,10 @@ console.log(publicKey);
 console.log(privateKey); 
 
 
+module.exports = {
+    privateKey, publicKey
+}
+
+
 
 
