@@ -39,7 +39,9 @@ const encryptedMessage = crypto.publicEncrypt(publicKey, Buffer.from(originalMes
 
 const decryptedMessage = crypto.privateDecrypt(privateKey, encryptedMessage).toString('utf-8');
 
-
+console.log('Original Message:  ', originalMessage);
+console.log('Encrypted Message:  ', encryptedMessage.toString('base64'));
+console.log('Decrypted Message:  ', decryptedMessage);
 
 
 
