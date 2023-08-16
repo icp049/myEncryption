@@ -35,6 +35,10 @@ const originalMessage = 'Hello, my name is Ian Pedeglorio';
 
 const encryptedMessage = crypto.publicEncrypt(publicKey, Buffer.from(originalMessage, 'utf-8') );
 
+//decrypt using private
+
+const decryptedMessage = crypto.privateDecrypt(privateKey, encryptedMessage).toString('utf-8');
+
 
 
 
