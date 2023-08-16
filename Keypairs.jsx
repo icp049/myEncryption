@@ -27,6 +27,16 @@ module.exports = {
     privateKey, publicKey
 }
 
+//lets see application here 
+
+const originalMessage = 'Hello, my name is Ian Pedeglorio';
+
+//encrypt using public key
+
+const encryptedMessage = crypto.publicEncrypt(publicKey, Buffer.from(originalMessage, 'utf-8') );
+
+
+
 
 
 
