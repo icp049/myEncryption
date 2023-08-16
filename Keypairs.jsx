@@ -12,6 +12,8 @@ publicKeyEncoding :{
 privateKeyEncoding: {
     type: 'pkcs8',
     format: 'pem', //privacy enhanced mail 
+    cipher: 'aes-256-cbc',
+    passphrase: 'secret message'
 },
 
 });
