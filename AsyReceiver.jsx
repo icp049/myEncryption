@@ -36,3 +36,5 @@ const sign = crypto.createSign('RSA-SHA256');
 sign.update(encryptedMessage);
 const signature = sign.sign(senderKeyPair.privateKey, 'base64');
 console.log('Signature:', signature);
+
+//data too large
