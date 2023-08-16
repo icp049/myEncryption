@@ -1,5 +1,5 @@
 const {generateKeyPairSync} = require('crypto');
-const crypto = require('cypto');
+const crypto = require('crypto');
 // this is a shared key
 //private to public
 
