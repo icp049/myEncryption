@@ -4,7 +4,14 @@ const {generateKeyPairSync} = require('crypto');
 //private to public
 
 const {privateKeym publicKey} = generateKeyPairSync('rsa', {
-    
+modulusLength: 2048,
+publicKeyEncoding :{
+    type: 'spki',
+},
+privateKeyEncoding: {
+    type: 'pkcs8',
+},
+
 });
 
 
