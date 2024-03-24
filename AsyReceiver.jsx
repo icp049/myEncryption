@@ -21,7 +21,7 @@ const symmetricKey = crypto.randomBytes(32); // 32 bytes for AES-256
 const encryptedSymmetricKey = crypto.publicEncrypt(
     { key: receiverPublicKey, padding: crypto.constants.RSA_PKCS1_OAEP_PADDING },
     symmetricKey
-);
+)//
 
 // Encrypt the message using the symmetric key
 const cipher = crypto.createCipheriv('aes-256-cbc', symmetricKey, crypto.randomBytes(16)); // 16 bytes for IV
